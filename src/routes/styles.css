@@ -1,0 +1,58 @@
+/**
+ * app.css
+ */
+:root {
+  height: 100%;
+  font-family: "Sawarabi Gothic", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Kosugi Maru", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.025em;
+}
+
+body {
+  height: 100%;
+}
+
+.btn-no-style {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  cursor: pointer;
+}
+
+/**
+ *  Color themes
+ */
+[data-theme=light],
+:root:not([data-theme=dark]),
+:host(:not([data-theme=dark])) {
+  --color: #373C44;
+  --background-color: #fafafa;
+  --card-background-color: #fafafa;
+  --card-sectionning-background-color: #F2F2F2;
+}
+
+/* Automatically enabled if user has Dark mode enabled. */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]),
+  :host(:not([data-theme])) {
+    --color: #E8ECF2;
+    --background-color: #0D1117;
+  }
+}
+
+[data-theme=dark],
+:root:not([data-theme=light]),
+:host(:not([data-theme=light])) {
+  --color: #E8ECF2;
+  --background-color: #0D1117;
+}

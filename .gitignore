@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+
+# contents json
+/contents/article_routes.json
+/contents/articles.json
+/contents/categories.json
+/contents/tags.json
+
